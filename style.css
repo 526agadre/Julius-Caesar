@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+
+.home {
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20231008/pngtree-ancient-statue-of-julius-caesar-octavian-augustus-a-white-gypsum-copy-image_13617438.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+}
+
+.container {
+    max-width: 500px;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.title {
+    font-size: 3em;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.quote {
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .logo {
+        font-size: 1.2em;
+    }
+
+    .nav-links li a {
+        font-size: 0.9em;
+    }
+
+    .home {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container {
+        margin-right: 0;
+        max-width: 90%;
+    }
+
+    .title {
+        font-size: 2.5em;
+    }
+
+    .quote {
+        font-size: 1.2em;
+    }
+
+    .description {
+        font-size: 1em;
+    }
+}
+
+

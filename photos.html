@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julius Caesar Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        .navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+        .carousel-inner img {
+            max-height: 400px;
+            object-fit: cover;
+        }
+        .carousel-card {
+            background-color: black;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Julius Caesar</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="earlyyears.html">Early Years</a></li>
+            <li><a href="accomplishments.html">Accomplishments</a></li>
+            <li><a href="photos.html">Photos</a></li>
+        </ul>
+    </nav>
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-8">
+            <div id="juliusCaesarCarousel1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://media.istockphoto.com/id/1220935268/photo/nerva-emperor-of-ancient-rome.jpg?s=612x612&w=0&k=20&c=tgMRa22f76YS38n9f1kLHKvPldsnoTP0MgN8EBG9qzM=" class="d-block w-100" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://png.pngtree.com/thumb_back/fw800/background/20231020/pngtree-germanicus-julius-caesar-head-a-white-gypsum-replica-for-artists-presented-image_13645860.png" class="d-block w-100" alt="Image 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#juliusCaesarCarousel1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#juliusCaesarCarousel1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="carousel-card">
+                <h5>About Julius Caesar when he was older</h5>
+                <p id="image-description1">When older, Julius Caesar was described as a tall, well-dressed man with fair skin, slender limbs, and a striking appearance, often noted for his piercing dark eyes; he was known for his lavish lifestyle, evident in his clothing choices, and was considered to have a somewhat full face, with a reputation for being a charismatic and powerful leader who had gained immense political influence in Rome, often seen as arrogant and ambitious with a strong desire for control, which ultimately led to his assassination as dictator for life.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-8">
+            <div id="juliusCaesarCarousel2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://images.pond5.com/roman-conqueror-julius-caesar-statue-footage-145475782_iconl.jpeg" class="d-block w-100" alt="Image 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs6zvKC3oKdz0MGVFd8sifh8Sn-fmFpw2Fc2YZedhrOrIf4s7mYHX_Uej6O_5WhZ7ssSc&usqp=CAU" class="d-block w-100" alt="Image 5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://twistedsifter.com/wp-content/uploads/2011/07/julius-caesar-bust-black-background.jpg" class="d-block w-100" alt="Image 6">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#juliusCaesarCarousel2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#juliusCaesarCarousel2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="carousel-card">
+                <h5>About Julius Caesar when he was a Roman Empire</h5>
+                <p id="image-description2">Julius Caesar was a renowned Roman general, politician, and scholar, known for his exceptional military prowess, charismatic personality, and powerful oratory skills, which allowed him to gain immense popularity among the Roman people, ultimately rising to power as a dictator through his successful campaigns in Gaul and subsequent civil war, eventually leading to his assassination by senators who feared his growing influence. </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
